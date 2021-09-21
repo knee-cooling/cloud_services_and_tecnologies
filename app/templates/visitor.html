@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Посетитель {% endblock %}
+{% block content %}
+    <div class="bg-light p-5 rounded">
+        <h2>Посетитель</h2>
+        <h3>Описание</h3>
+        <ul>
+            Вычисление стоимости комплектующих:
+            <li>CPU</li>
+            <li>RAM</li>
+        </ul>
+        <h3>Сумма к оплате</h3>
+        <p class="lead">{{ visitor1 | safe }} </p>
+        <p class="lead">{{ visitor2 | safe }} </p>
+
+    </div>
+{% endblock %}
